@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+	<head> 
+  		<link rel="stylesheet" type="text/css" href="css/main.css">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="js/CustomTooltip.js"></script>
+		<!-- <script src="js/d3script.js"></script> -->
+		
+	</head>
+	
+	<body> 
+		<div id = "header"> 
+			<div id = "name"> 
+				<h2><a href = "index.html" style = "text-decoration: none; color: hsl(225,90%,80%);">AYESHA ALI</a></h2>
+			</div>
+		</div>
+
+		<div id = "menu">
+			<a href = "index.html"><i class = "fa fa-home fa-lg" aria-hidden="true"></i></a>
+			<a href = "about.html"><i class = "fa fa-user fa-lg" aria-hidden="true"></i></a>
+			<a href = "https://github.com/ayeshaali"><i class = "fa fa-github fa-lg" aria-hidden="true"></i></a>	
+			<i class = "fa fa-envelope fa-lg" aria-hidden="true"></i>	
+		</div> 
+
+		<svg width="850" height="850" style = "border-radius: 50%;"></svg>
+
+		<script src="js/CustomTooltip.js"></script>
+		<script src="js/d3script.js"></script>
+
+		<script>
+		    $(function() {
+    			var windowWidth = $(window).width();
+    			$('#header').css('width', windowWidth);
+			});</script>
+	</body>
+</html>

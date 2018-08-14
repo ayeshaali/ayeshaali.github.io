@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
+@import url("https://fonts.googleapis.com/css?family=Nunito:lightitalic");
+
+body {
+  background-color: steelblue;
+}
+
+#header {
+  z-index: 2;
+  background: white;
+  position: absolute;
+  padding: 0em;
+  top: 0em;
+  left: 0em;
+  color: red;
+  overflow: auto;
+}
+
+#name {
+  font-family: "Abril Fatface";
+  padding-left: 2%;
+  color: hsl(225,90%,80%);
+  font-size: 120%;
+}
+
+#menu{
+  z-index: 10000;
+  width: 20%;
+  position: absolute;
+  top: 11%;
+  left: 50%;
+  margin-left: -7%;
+}
+
+#menu i {
+  text-align: center;
+  padding: 4%;
+  margin-right: 2%;
+  display: inline-block;
+  background-color: steelblue;
+  color: hsl(200,90%,80%);
+}
+ 
+#menu a i, #menu i {
+  border-radius: 50%;
+}
+
+h1{
+  font-size: 2.2em;
+}
+
+svg {
+  margin-left:auto; 
+  margin-right:auto; 
+  position: relative;
+  display:block;
+  padding: 1em;
+  margin-top: 10em;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.node--leaf {
+  fill: white;
+}
+
+.label {
+  font: 1.2em "Oswald", "regular";
+  text-anchor: middle;
+  /*text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;*/
+}
+
+
+.label,
+.node--root{
+  pointer-events: none;
+}
+
+.tooltip {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  -moz-border-radius:5px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  /* background: #222222; */
+  background: #fff;
+  opacity: .9;
+  /* color: #eeeeee; */
+  color: #383838;
+  padding: 10px;
+  width: 300px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  z-index: 10;
+}
+
+.tooltip .title {
+  font-size: 13px;
+}
+
+.tooltip .name {
+  font-weight:bold;
+}
+
+
+#container {
+  z-index: 1000;
+  border-style: solid;
+  border-width: .1em;
+  border-color: cornflowerblue;
+  position: absolute;
+  background-color: #B7DCEB;
+  height: 90%;
+  top: 13.95%;
+  left: 0px;
+  text-align: center;
+  display: table;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+#quote {
+  position: relative;
+  height: 80%;
+  width: 40%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#line-1{
+  display: inline;
+  color: steelblue;
+  font-family: 'Special Elite';
+  font-size: 2.25em;
+  white-space: pre-line;
+  word-wrap: break-word; 
+  line-height: 1.25em;
+}
+
+
+#image {
+  border-style: solid;
+  border-width: .1em;
+  border-color: cornflowerblue;
+  background-color: #B7DCEB;
+  position: absolute;
+  height: 89%;
+  top: 13.95%;
+}
+
+#description {
+  font-family: 'Nunito', sans-serif;
+  display: block;
+  position: relative;
+  width: 90%;
+  height: 10%;
+  top: 80%;
+  left: 42%;
+  margin-bottom: 0%;
+}
+
+#image i {
+  font-family: 'Nunito', sans-serif;
+  font-style: lightitalic;
+  background-color: #B7DCEB;
+  color: black;
+  padding: 0%;
+  text-align: center;
+  display: block;
+  position: relative;
+  width: 80%;
+  height: 7%;
+  top: 75%;
+  left: 50%;
+  margin-left: -37%;
+}
+
+#profile {
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -45%;
+  top: 50%;
+  margin-top: -55%;
+}
+
+.title {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight:bold;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.value {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+
+.percent {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.typed-cursor{
+  color: white;
+  opacity: 1;
+  font-size: 3em;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  -ms-animation: blink 0.7s infinite;
+  -o-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+.typed-fade-out{
+  opacity: 0;
+  animation: 0;
+  transition: opacity .25s;
+}

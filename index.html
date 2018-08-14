@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+	<head> 
+  		<link rel="stylesheet" type="text/css" href="css/main.css">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title> Ayesha Ali </title>
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<script src="js/typed.js" type="text/javascript"></script>
+		
+	</head>
+	
+	<body> 
+		<div id = "header"> 
+			<div id = "name"> 
+				<h2><a href = "index.html" style = "text-decoration: none; color: hsl(225,90%,80%);"> AYESHA ALI</a></h2>
+			</div>
+		</div>
+
+		<div id = "menu">
+			<a href = "index.html"><i  class = "fa fa-home fa-lg" aria-hidden="true"></i></a>
+			<a href = "about.html"><i  class = "fa fa-user fa-lg" aria-hidden="true"></i></a>
+			<a href = "https://github.com/ayeshaali"><i class = "fa fa-github fa-lg" aria-hidden="true"></i></a>
+			<i class = "fa fa-envelope fa-lg" aria-hidden="true"></i>
+		</div> 
+
+
+		<div id = "container">
+			<div id = "quote">
+				<p id = "line-1" class="anim-typewriter"></p>
+			</div>
+		</div>
+
+		<div id = "image"> 
+			<img id = "profile" src="https://github.com/ayeshaali/ingenuity/blob/gh-pages/assets/profile.JPG"/>
+			<b id = "description">Ayesha</b>
+			<i> Developer, Photographer, Data Artist, Scientist, Mathematician</i>
+		</div>	
+
+    	<script src="js/quotes.js"> </script>
+		<script>
+			$('#dropdown').hide();
+			$(document).ready(function () {
+	        	$('#menu').click(
+	        		function () {
+	            		if($('#dropdown').is(':visible') == false){
+	            			$('#dropdown').fadeIn();
+	            			return;
+	            		}
+	            		$('#dropdown').fadeOut();
+	        		}
+	        	);
+	    	});
+
+		    $(function() {
+    			var windowWidth = $(window).width();
+    			$('body').css('width', windowWidth);
+    			$('#header').css('width', windowWidth);
+    			$('#image').css('width', (windowWidth*.3));
+    			$('#image').css('left', (windowWidth*.7));
+    			$('#container').css('width', windowWidth*.7);
+    			$('#profile').css('width', ((2*windowWidth)/7));
+    			$('#profile').css('height', ((2*windowWidth)/7));
+			});
+		</script>
+	</body>
+</html>
