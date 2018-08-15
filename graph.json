@@ -3,7 +3,7 @@
  "children": [
   {"name": "EDUCATION",
     "children": [
-      {"name": "Trinity School", "size": 6},
+      {"name": "Trinity School", "size": 8},
       {"name": "P.S.122 Mamie Fay", "size": 3}
       ]
   }, 
@@ -24,7 +24,7 @@
           {"name": "Girls Learn International, Captain", "size": 3},
           {"name": "Muslim Affinity Group, Member", "size": 3.5},
           {"name": "Middle School Math, Tutor", "size": 2},
-          {"name": "Girls Who Code Afterschool Program, Teacher", "size": 4}
+          {"name": "Girls Who Code, President", "size": 4}
         ]
       },
       {"name": "Academic Pursuits",

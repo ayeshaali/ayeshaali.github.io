@@ -35,16 +35,25 @@ d3.json("graph.json", function(error, root) {
     .on("mouseover", function(d) { if (!d.children && focus === d.parent ) show_details(d, this);} )
     .on("mouseout", function(d) {hide_details(d, this);} )
     // .on("mousemove", function() {return tooltip.style("top", (d3.event.pageY - 10) + "px").style("left", (d3.event.pageX + 10) + "px");})
-    
-        
 
   var text = g.selectAll("text")
     .data(nodes)
     .enter().append("text")
     .attr("class", "label")
     .style("fill-opacity", function(d) { return d.parent === root ? 1 : 0; })
-    .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
-    .text(function(d) { return d.data.name; })
+    .style("display", function(d) { return d.parent === root ? "block" : "none"; })
+    .style("font-size", function(d) {
+      var len = d.data.name.substring(0, d.r / 3).length;
+      var size = d.r/3;
+      size *= 12 / len;
+      size += 1;
+      return Math.round(size)+'px';
+    })
+    .text(function(d) {
+      var text = d.data.name.substring(0, d.r / 3);
+      return text;
+    })
+    .text(function(d) { return d.data.name; });
 
   var node = g.selectAll("circle,text");
     
@@ -90,6 +99,13 @@ function hide_details(data, element) {
     //d3.select(element).attr("fill", function(d) { return d3.rgb(fill_color(d.value));} );
     //d3.select(element).attr("stroke", function(d) { return d3.rgb(fill_color(d.value));} );
     tooltip.hideTooltip();
+}
+
+function getSize(d) {
+  var bbox = this.getBBox(),
+      cbbox = this.parentNode.getBBox(),
+      scale = Math.min(cbbox.width/bbox.width, cbbox.height/bbox.height);
+  d.scale = scale;
 }
 
 
