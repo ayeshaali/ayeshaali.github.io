@@ -139,7 +139,7 @@ svg {
   margin: 0 auto;
 }
 
-#quote {
+#quote, #blurb {
   position: relative;
   height: 80%;
   width: 40%;
@@ -147,7 +147,7 @@ svg {
   vertical-align: middle;
 }
 
-#line-1{
+#line-1, h1{
   display: inline;
   color: steelblue;
   font-family: 'Special Elite';
@@ -206,8 +206,7 @@ svg {
 }
 
 #blurb-container {
-  display: block;
-  position: absolute;
+  z-index: 1000;
   border-style: solid;
   border-width: .2em;
   border-color: cornflowerblue;
@@ -215,16 +214,10 @@ svg {
   background-color: #B7DCEB;
   top: 69%;
   padding-bottom: 5%;
-  padding-top
-}
-
-#blurb {
-  background-color: white;
-  position: relative;
-  height: 80%;
-  width: 40%;
-  display: block;
+  text-align: center;
+  display: table;
   vertical-align: middle;
+  margin: 0 auto;
 }
 
 .title {
