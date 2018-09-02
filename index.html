@@ -39,6 +39,12 @@
 			<i> Developer, Photographer, Data Artist, Scientist, Mathematician</i>
 		</div>	
 
+		<div id = "blurb-container"> 
+			<div id = blurb> 
+				<h1>  Developer, Photographer, Data Artist, Scientist, Mathematician</h1>	
+			</div>
+		</div>	
+
     	<script src="js/quotes.js"> </script>
 		<script>
 			$('#dropdown').hide();
@@ -61,8 +67,9 @@
     			$('#image').css('width', (windowWidth*.3));
     			$('#image').css('left', (windowWidth*.7));
     			$('#container').css('width', windowWidth*.7);
-    			$('#profile').css('width', ((2*windowWidth)/7)-10);
-    			$('#profile').css('height', ((2*windowWidth)/7));
+    			$('#profile').css('width', ((2*windowWidth)/9.5)-10);
+    			$('#profile').css('height', ((2*windowWidth)/9.5));
+    			$('#blurb').css('width', windowWidth);
 			});
 		</script>
 	</body>

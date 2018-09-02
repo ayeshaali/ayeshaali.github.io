@@ -1,6 +1,5 @@
 var faveQuotes = [
     '"Put your heart, mind, and soul into even your smallest acts. This is the secret of success."<br> -Swami Sivananda',
-    '"Stop acting so small. You are the universe in ecstatic motion."<br> -Rumi',
     '"Strength is a matter of the made-up mind."<br> -John Beecher',
     '"Anything is possible if you\'ve got enough nerve"<br> -JK Rowling',
     '“Think lightly of yourself and deeply of the world.”<br> -Miyamoto Musashi',

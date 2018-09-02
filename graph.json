@@ -10,9 +10,11 @@
 
   {"name": "WORK EXPERIENCE",
     "children": [
-      {"name": "American Museum of Natural History, Programming Intern", "size": 12},
+      {"name": "American Museum of Natural History, Programming Intern", "size": 10},
       {"name": "Mt. Sinai Hospital, Astoria, NY, Intern ", "size": 3},
-      {"name": "Biomedical Engineering, Columbia University, Research Intern", "size": 10}
+      {"name": "Biomedical Engineering, Columbia University, Research Intern", "size": 7},
+      {"name": "Lavner Camps, Technology Instructor", "size": 5},
+      {"name": "Codecademy, Curriuclum Development Contractor", "size": 5}
     ]
   },
   
@@ -21,19 +23,21 @@
       {"name": "Volunteer Work",
         "children" :[
           {"name": "Girls Learn International, Member", "size": 2},
-          {"name": "Girls Learn International, Captain", "size": 3},
-          {"name": "Muslim Affinity Group, Member", "size": 3.5},
+          {"name": "Girls Learn International, Captain", "size": 5},
+          {"name": "Muslim Affinity Group, Member", "size": 5},
+          {"name": "Baitul Mukarram Masjid, Teacher's Assistant", "size": 6},
           {"name": "Middle School Math, Tutor", "size": 2},
-          {"name": "Girls Who Code, President", "size": 4}
+          {"name": "Girls Who Code, President", "size": 7}
         ]
       },
       {"name": "Academic Pursuits",
        "children": [
         {"name": "Neuroscience Program, Researcher", "size": 4},
-        {"name": "Science Olympiad, Team Member", "size": 4},
-        {"name": "BridgeUp: STEM, Brown Scholar", "size": 5},
+        {"name": "Science Olympiad, Team Member", "size": 7},
+        {"name": "BridgeUp: STEM, Brown Scholar", "size": 7},
         {"name": "Math Club, Team Member", "size": 2},
-        {"name": "Model United Nations, Delegate", "size": 3}
+        {"name": "HackTrin, Organizer", "size": 4},
+        {"name": "Model United Nations, Delegate", "size": 2}
        ]
       }
     ]
@@ -49,20 +53,20 @@
       },
       {"name": "Computer Science Proficiency",
         "children" : [
-          {"name": "Python", "size": 4},
+          {"name": "Python", "size": 8},
           {"name": "SQL", "size": 4},
-          {"name": "Unity", "size": 4},
-          {"name": "Processing", "size": 4},
+          {"name": "Unity", "size": 6},
+          {"name": "Processing", "size": 6},
           {"name": "OpenScad", "size": 4},
-          {"name": "HTML and CSS", "size": 4},
+          {"name": "HTML and CSS", "size": 8},
           {"name": "Javascript", 
            "children": [
-             {"name": "d3.js", "size": 4},
-             {"name": "p5.js", "size": 4},
+             {"name": "d3.js", "size": 7},
+             {"name": "p5.js", "size": 6},
              {"name": "jQuery", "size": 4}
            ]
           },
-          {"name": "Data Visualization", "size": 4}
+          {"name": "Data Visualization", "size": 6}
         ]
       }    
     ]
