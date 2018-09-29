@@ -5,7 +5,7 @@ var svg = d3.select("svg"),
 
 var color = d3.scaleLinear()
     .domain([-1, 5])
-    .range(["hsl(200,80%,80%)", "hsl(230,30%,40%)"])
+    .range(["#f4b7a1", "#fff7f4"])
     .interpolate(d3.interpolateHcl);
 
 var pack = d3.pack()
