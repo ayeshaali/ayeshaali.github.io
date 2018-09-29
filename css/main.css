@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
-@import url("https://fonts.googleapis.com/css?family=Special+Elite");
 @import url("https://fonts.googleapis.com/css?family=Nunito:lightitalic");
+@import url('https://fonts.googleapis.com/css?family=Notable|Raleway');
+
+/*
+#EDC7B7
+#EEE2DC
+#BAB2B5
+#123C69
+#AC3B61
+*/
 
 body {
-  background-color: steelblue;
+  background-color: #123C69;
   width: 100%;
   height: 100%;
   margin: 0px;
@@ -14,7 +22,7 @@ body {
 
 #header {
   z-index: 2;
-  background: white;
+  background: #AC3B61;
   position: absolute;
   padding: 0em;
   top: 0em;
@@ -26,7 +34,7 @@ body {
 #name {
   font-family: "Abril Fatface";
   padding-left: 2%;
-  color: hsl(225,90%,80%);
+  color: #EEE2DC;
   font-size: 120%;
 }
 
@@ -44,8 +52,8 @@ body {
   padding: 4%;
   margin-right: 2%;
   display: inline-block;
-  background-color: steelblue;
-  color: hsl(200,90%,80%);
+  background-color: #EDC7B7;
+  color: #123C69;
 }
  
 #menu a i, #menu i {
@@ -54,8 +62,113 @@ body {
 
 h1{
   font-size: 2.2em;
+  color: #f7d1b5;
 }
 
+#container {
+  z-index: 1000;
+  border-style: solid;
+  border-width: .2em;
+  border-color: #123C69;
+  position: absolute;
+  background-color: #123C69;
+  height: 56%;
+  top: 14%;
+  left: 0px;
+  text-align: center;
+  display: table;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+
+#quote {
+  position: relative;
+  height: 80%;
+  width: 40%;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#line-1, h1{
+  display: inline;
+  /*color: steelblue;*/
+  color: #f7d1b5;
+  font-family: 'Notable', sans-serif;
+  font-size: 2.25em;
+  white-space: pre-line;
+  word-wrap: break-word; 
+  line-height: 1.25em;
+}
+
+
+#image {
+  border-style: solid;
+  border-width: .2em;
+  border-color: #123C69;
+  background-color: #123C69;
+  position: absolute;
+  height: 55%;
+  top: 15%;
+}
+
+#description {
+  font-family: 'Nunito', sans-serif;
+  color: #EDC7B7;
+  display: block;
+  position: relative;
+  width: 90%;
+  height: 11%;
+  top: 81%;
+  left: 42%;
+  margin-bottom: 0%;
+}
+
+#image i {
+  font-family: 'Nunito', sans-serif;
+  font-style: lightitalic;
+  background-color: #123C69;
+  /*color: black;*/
+  color: #f7d1b5;
+  padding: 0%;
+  text-align: center;
+  display: block;
+  position: relative;
+  width: 80%;
+  height: 7%;
+  top: 76%;
+  left: 50%;
+  margin-left: -37%;
+}
+
+#profile {
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -33%;
+  top: 50%;
+  margin-top: -43%;
+}
+
+.desc {
+  font-family: 'Raleway', sans-serif;
+  color: #EDC7B7;
+  margin: 0px auto;
+  margin-top: 2%;
+  padding: 3%;
+  font-size: 1.1em;
+  text-align: center;
+  background-color: #AC3B61;
+  width: 63%; 
+}
+
+.bio {
+  position: absolute;
+  top: 70%;
+  background-color: #123C69; 
+} 
+
+/*D3.JS VISUALIZATION*/
 svg {
   margin-left:auto; 
   margin-right:auto; 
@@ -83,9 +196,7 @@ svg {
   text-anchor: middle;  
   white-space: pre-line;
   word-wrap: break-word; 
-  /*text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;*/
 }
-
 
 .label,
 .node--root,
@@ -122,105 +233,7 @@ svg {
   font-weight:bold;
 }
 
-
-#container {
-  z-index: 1000;
-  border-style: solid;
-  border-width: .2em;
-  border-color: cornflowerblue;
-  position: absolute;
-  background-color: #B7DCEB;
-  height: 55.5%;
-  top: 13.95%;
-  left: 0px;
-  text-align: center;
-  display: table;
-  vertical-align: middle;
-  margin: 0 auto;
-}
-
-#quote, #blurb {
-  position: relative;
-  height: 80%;
-  width: 40%;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-#line-1, h1{
-  display: inline;
-  color: steelblue;
-  font-family: 'Special Elite';
-  font-size: 2.25em;
-  white-space: pre-line;
-  word-wrap: break-word; 
-  line-height: 1.25em;
-}
-
-
-#image {
-  border-style: solid;
-  border-width: .2em;
-  border-color: cornflowerblue;
-  background-color: #B7DCEB;
-  position: absolute;
-  height: 55%;
-  top: 13.95%;
-}
-
-#description {
-  font-family: 'Nunito', sans-serif;
-  display: block;
-  position: relative;
-  width: 90%;
-  height: 11%;
-  top: 82%;
-  left: 42%;
-  margin-bottom: 0%;
-}
-
-#image i {
-  font-family: 'Nunito', sans-serif;
-  font-style: lightitalic;
-  background-color: #B7DCEB;
-  color: black;
-  padding: 0%;
-  text-align: center;
-  display: block;
-  position: relative;
-  width: 80%;
-  height: 7%;
-  top: 75%;
-  left: 50%;
-  margin-left: -37%;
-}
-
-#profile {
-  display: block;
-  border-radius: 50%;
-  position: absolute;
-  left: 50%;
-  margin-left: -33%;
-  top: 50%;
-  margin-top: -43%;
-}
-
-#blurb-container {
-  font-family: 'Nunito', sans-serif;
-  z-index: 1000;
-  border-style: solid;
-  border-width: .2em;
-  border-color: cornflowerblue;
-  position: absolute;
-  background-color: #B7DCEB;
-  top: 69%;
-  padding-bottom: 5%;
-  text-align: center;
-  display: table;
-  vertical-align: middle;
-  margin: 0 auto;
-}
-
+/*QUOTE*/
 .title {
     margin: 0;
     font-family: sans-serif;
