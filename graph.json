@@ -3,10 +3,11 @@
  "children": [
   {"name": "EDUCATION",
     "children": [
-      {"name": "Trinity School", "size": 8},
-      {"name": "P.S.122 Mamie Fay", "size": 3}
+      {"name": "Trinity School", "size": 6},
+      {"name": "P.S.122 Mamie Fay", "size": 3},
+      {"name": "Massachusetts Institute of Technology", "size": 6}
       ]
-  }, 
+  },
 
   {"name": "WORK EXPERIENCE",
     "children": [
@@ -14,19 +15,19 @@
       {"name": "Mt. Sinai Hospital, Astoria, NY, Intern ", "size": 3},
       {"name": "Biomedical Engineering, Columbia University, Research Intern", "size": 7},
       {"name": "Lavner Camps, Technology Instructor", "size": 5},
-      {"name": "Codecademy, Curriuclum Development Contractor", "size": 5}
+      {"name": "Codecademy, Curriuclum Development Contractor", "size": 4},
+      {"name": "YAI, Web Development Intern", "size": 5}
     ]
   },
-  
+
   {"name": "EXTRACURRICULAR ACTIVITIES",
     "children": [
       {"name": "Volunteer Work",
         "children" :[
           {"name": "Girls Learn International, Member", "size": 2},
           {"name": "Girls Learn International, Captain", "size": 5},
-          {"name": "Muslim Affinity Group, Member", "size": 5},
+          {"name": "Muslim Affinity Group, Captain", "size": 5},
           {"name": "Baitul Mukarram Masjid, Teacher's Assistant", "size": 6},
-          {"name": "Middle School Math, Tutor", "size": 2},
           {"name": "Girls Who Code, President", "size": 7}
         ]
       },
@@ -35,9 +36,7 @@
         {"name": "Neuroscience Program, Researcher", "size": 4},
         {"name": "Science Olympiad, Team Member", "size": 7},
         {"name": "BridgeUp: STEM, Brown Scholar", "size": 7},
-        {"name": "Math Club, Team Member", "size": 2},
         {"name": "HackTrin, Organizer", "size": 4},
-        {"name": "Model United Nations, Delegate", "size": 2}
        ]
       }
     ]
@@ -55,11 +54,12 @@
         "children" : [
           {"name": "Python", "size": 8},
           {"name": "SQL", "size": 4},
-          {"name": "Unity", "size": 6},
+          {"name": "Unity", "size": 4},
           {"name": "Processing", "size": 6},
           {"name": "OpenScad", "size": 4},
           {"name": "HTML and CSS", "size": 8},
-          {"name": "Javascript", 
+          {"name": "Java", "size": 6},
+          {"name": "Javascript",
            "children": [
              {"name": "d3.js", "size": 7},
              {"name": "p5.js", "size": 6},
@@ -68,7 +68,7 @@
           },
           {"name": "Data Visualization", "size": 6}
         ]
-      }    
+      }
     ]
   }
   ]
